@@ -22,4 +22,3 @@ class TuneApp extends StatelessWidget {
     );
   }
 }
-

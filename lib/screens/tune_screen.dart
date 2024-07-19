@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tune_app/widgets/tune_item.dart';
 
 class TuneScreen extends StatelessWidget {
   const TuneScreen({super.key});
@@ -12,6 +13,13 @@ class TuneScreen extends StatelessWidget {
         title: Text("Flutter Tune "),
         centerTitle: true,
       ),
+      body: Column(
+        children: [
+          TuneItem(color: Colors.red),
+
+
+        ],
+      ) ,
     );
   }
 }

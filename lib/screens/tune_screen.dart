@@ -20,7 +20,14 @@ class TuneScreen extends StatelessWidget {
         title: const Text("Flutter Tune "),
         centerTitle: true,
       ),
-      body: Column(children: getTuneItems()),
+      //body: Column(children: getTuneItems()),
+      /// or
+      body: Column(
+          children: tuneColors
+              .map(
+                (element) => TuneItem(color: element),
+              )
+              .toList()),
     );
   }
 
